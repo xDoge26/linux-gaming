@@ -23,6 +23,15 @@ WINEARCH=win32 WINEPREFIX=~/.wine wine wineboot
 xrandr --size 960x540
 xrandr --output DP-1 --scale 0.5x0.5 --filter nearest
 
+# Swap
+vm.max_map_count = 81920
+vm.mmap_min_addr = 40960
+vm.min_free_kbytes = 10240
+vm.oom_kill_allocating_task = 1
+vm.oom_dump_tasks = 0
+vm.user_reserve_kbytes = 0     
+vm.swappiness = 80
+
 # Codec : 
 sudo apt install gstreamer1.0-libav:i386
 sudo apt install gstreamer1.0-plugins-bad:i386
