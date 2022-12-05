@@ -22,6 +22,10 @@ WINEARCH=win32 WINEPREFIX=~/.wine wine wineboot
 # Integer Scaling : 
 xrandr --size 960x540
 xrandr --output DP-1 --scale 0.5x0.5 --filter nearest
+# Intel 
+nano /etc/sysctl.conf
+
+dev.i915.perf_stream_paranoid=0
 
 # Swap
 vm.max_map_count = 81920
