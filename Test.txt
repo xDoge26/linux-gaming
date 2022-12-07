@@ -21,7 +21,7 @@ WINEARCH=win64 WINEPREFIX=~/.wine wine wineboot
 # Integer Scaling : 
 xrandr --size 960x540
 xrandr --output DP-1 --scale 0.5x0.5 --filter nearest
-
+xrandr --output <output> --mode desktopxdesktopy --rate hz --scale-from scaleresxscaleresy --rate hz --filter nearest
 # Intel 
 
 sudo nano /etc/sysctl.conf
@@ -64,12 +64,3 @@ sudo apt install gstreamer1.0-plugins-good
 sudo apt install gstreamer1.0-plugins-ugly
 
 
-Incorrect, ArchWiki to the rescue. For integer scaling set it to center. To scale without 100% correct pixels use nearest neighbour. xrandr --output <output> --mode desktopxdesktopy --rate hz --scale-from scaleresxscaleresy --rate hz --filter nearest
-
-For instance I use this to play Age of Wonders at 533x1280 to scale perfectly to my 3840x1600 display on Display port 2. So the command for that instance looks like this.
-
-xrandr --output DP-2 --mode 3840x1600 --rate 144 --scale-from 1280x533 --rate 144 --filter nearest < as that is a 'perfect' scale the pixel size should be correct as well. To get wine to recognize such a silly resolution though, you have to run the wine in a windowed mode of 1280x533, but with the application itself being fullscreen.
-
-This eliminates any bilinear filtering as well. or set filter bilinear if scaling a 3d game and you want that.
-
-The nearest neighbour scaling we get through xrandr is far superior to whats possible on Windows outside of driver level integer scaling, which you get by choosing 'center' on AMD card, but no such option on nvidia, which defaults to bilinear
