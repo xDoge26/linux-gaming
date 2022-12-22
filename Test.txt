@@ -71,4 +71,6 @@ sudo apt install gstreamer1.0-plugins-base
 sudo apt install gstreamer1.0-plugins-good
 sudo apt install gstreamer1.0-plugins-ugly
 
+# ibus bamboo setup
 
+ibus-setup
