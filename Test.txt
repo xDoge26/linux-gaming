@@ -92,8 +92,7 @@ sudo apt install gstreamer1.0-plugins-ugly
 rm ~/.local/share/keyrings/login.keyring
 
 # Red Shift
-mkdir ~/.config/redshift
-nano ~/.config/redshift/redshift.conf
+nano ~/.config/redshift.conf
 
 [redshift]
 dawn-time=00:00-01:00
