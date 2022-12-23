@@ -95,5 +95,12 @@ rm ~/.local/share/keyrings/login.keyring
 mkdir ~/.config/redshift
 nano ~/.config/redshift/redshift.conf
 
+dawn-time=00:00-01:00
+dusk-time=01:00-00:00
 
+adjustment-method=randr
+location-provider=manual
+[manual]
+lat=0   
+lon=0  
 
