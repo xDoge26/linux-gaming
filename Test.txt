@@ -19,6 +19,11 @@ xrandr --mode 960x540
 xrandr --output DP-1 --scale 0.5x0.5 --filter nearest
 xrandr --output <output> --mode desktopxdesktopy --rate hz --scale-from scaleresxscaleresy --rate hz --filter nearest
 
+# Skip grub
+sudo nano /etc/default/grub
+GRUB_HIDDEN_TIMEOUT=0
+GRUB_TIMEOUT=0
+
 # Swapfile
 sudo fallocate -l 1G /swapfile
 sudo chmod 600 /swapfile
