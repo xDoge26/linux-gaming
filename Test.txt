@@ -32,11 +32,10 @@ sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
 
-sudo /etc/fstab
+sudo nano /etc/fstab
 /swapfile swap swap defaults 0 0
 
 # Intel 
-
 sudo nano /etc/sysctl.conf
 dev.i915.perf_stream_paranoid=0
 
@@ -76,7 +75,7 @@ rm ~/.local/share/keyrings/login.keyring
 nano ~/.config/redshift.conf
 
 [redshift]
-dawn-time=01:00
+dawn-time=02:00
 dusk-time=06:00
 adjustment-method=randr
 location-provider=manual
@@ -98,7 +97,7 @@ cl_crosshairgap 9999
 cl_crosshairdot 1
 cl_crosshairthickness 1
 
--novid -nojoy +cl_forcepreload 1 -softparticlesdefaultoff +mat_disable_fancy_blending 1 -limitvsconst +r_emulate_g
+-novid -nojoy
 
 spec_replay_autostart 0
 cl_disablefreezecam 1
