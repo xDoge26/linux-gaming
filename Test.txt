@@ -52,6 +52,8 @@ vm.swappiness = 80
 sudo apt-get install ibus-unikey
 ibus restart
 
+# ibus bamboo setup
+ibus-setup
 
 # Custom resolution
 
@@ -89,6 +91,4 @@ sudo apt install gstreamer1.0-plugins-ugly
 # Chrome password
 rm ~/.local/share/keyrings/login.keyring
 
-# ibus bamboo setup
 
-ibus-setup
