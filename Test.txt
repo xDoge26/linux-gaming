@@ -55,26 +55,6 @@ ibus restart
 # ibus bamboo setup
 ibus-setup
 
-# Custom resolution
-
-gtf 1920 1080 60
-xrandr --newmode "1920x1080_60.00"  172.80  1920 2040 2248 2576  1080 1081 1084 1118  -HSync +Vsync
-xrandr --addmode VGA1 "1920x1080_60.00"
-xrandr --output VGA1 --mode "1920x1080_60.00"
-
-# Steam
-cl_crosshairgap 9999
-cl_crosshairdot 1
-cl_crosshairthickness 1
-
--novid -nojoy +cl_forcepreload 1 -softparticlesdefaultoff +mat_disable_fancy_blending 1 -limitvsconst +r_emulate_g
-
-spec_replay_autostart 0
-cl_disablefreezecam 1
-
--no-browser +open steam://open/minigameslist
--screen-width 960 -screen-height 540 -window-mode exclusive
-
 # Codec : 
 sudo apt install gstreamer1.0-libav:i386
 sudo apt install gstreamer1.0-plugins-bad:i386
@@ -103,4 +83,26 @@ location-provider=manual
 [manual]
 lat=0   
 lon=0  
+
+
+# Custom resolution
+
+gtf 1920 1080 60
+xrandr --newmode "1920x1080_60.00"  172.80  1920 2040 2248 2576  1080 1081 1084 1118  -HSync +Vsync
+xrandr --addmode VGA1 "1920x1080_60.00"
+xrandr --output VGA1 --mode "1920x1080_60.00"
+
+# Steam
+cl_crosshairgap 9999
+cl_crosshairdot 1
+cl_crosshairthickness 1
+
+-novid -nojoy +cl_forcepreload 1 -softparticlesdefaultoff +mat_disable_fancy_blending 1 -limitvsconst +r_emulate_g
+
+spec_replay_autostart 0
+cl_disablefreezecam 1
+
+-no-browser +open steam://open/minigameslist
+-screen-width 960 -screen-height 540 -window-mode exclusive
+
 
