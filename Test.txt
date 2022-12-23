@@ -48,6 +48,11 @@ vm.oom_dump_tasks = 0
 vm.user_reserve_kbytes = 0     
 vm.swappiness = 80
 
+# Unikey
+sudo apt-get install ibus-unikey
+ibus restart
+
+
 # Custom resolution
 
 gtf 1920 1080 60
