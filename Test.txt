@@ -14,21 +14,19 @@ sudo apt install libgl1:i386 libgl1
 # Mesa :
 sudo add-apt-repository ppa:kisak/kisak-mesa && sudo dpkg --add-architecture i386 && sudo apt update && sudo apt upgrade && sudo apt install libgl1-mesa-dri:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386
 
-# Wine prefix : 
-rm -rf ~/.wine
-WINEARCH=win64 WINEPREFIX=~/.wine wine wineboot
-
 # Integer Scaling : 
 xrandr --mode 960x540
 xrandr --output DP-1 --scale 0.5x0.5 --filter nearest
 xrandr --output <output> --mode desktopxdesktopy --rate hz --scale-from scaleresxscaleresy --rate hz --filter nearest
 
-# Custom resolution
+# Swapfile
+sudo fallocate -l 1G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
 
-gtf 1920 1080 60
-xrandr --newmode "1920x1080_60.00"  172.80  1920 2040 2248 2576  1080 1081 1084 1118  -HSync +Vsync
-xrandr --addmode VGA1 "1920x1080_60.00"
-xrandr --output VGA1 --mode "1920x1080_60.00"
+sudo /etc/fstab
+/swapfile swap swap defaults 0 0
 
 # Intel 
 
@@ -43,6 +41,13 @@ vm.oom_kill_allocating_task = 1
 vm.oom_dump_tasks = 0
 vm.user_reserve_kbytes = 0     
 vm.swappiness = 80
+
+# Custom resolution
+
+gtf 1920 1080 60
+xrandr --newmode "1920x1080_60.00"  172.80  1920 2040 2248 2576  1080 1081 1084 1118  -HSync +Vsync
+xrandr --addmode VGA1 "1920x1080_60.00"
+xrandr --output VGA1 --mode "1920x1080_60.00"
 
 # Steam
 cl_crosshairgap 9999
