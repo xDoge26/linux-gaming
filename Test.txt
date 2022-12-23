@@ -23,6 +23,7 @@ xrandr --output <output> --mode desktopxdesktopy --rate hz --scale-from scaleres
 sudo nano /etc/default/grub
 GRUB_HIDDEN_TIMEOUT=0
 GRUB_TIMEOUT=0
+sudo update-grub
 
 # Swapfile
 sudo fallocate -l 1G /swapfile
