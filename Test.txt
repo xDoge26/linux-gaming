@@ -91,4 +91,9 @@ sudo apt install gstreamer1.0-plugins-ugly
 # Chrome password
 rm ~/.local/share/keyrings/login.keyring
 
+# Red Shift
+mkdir ~/.config/redshift
+nano ~/.config/redshift/redshift.conf
+
+
 
