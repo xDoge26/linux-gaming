@@ -22,3 +22,6 @@ apt install sudo nano wget
 # Exit Chroot
 exit
 
+# Making the squashfs image
+mksquashfs . Ubuntu_20.04.sqsh -comp zstd
+
