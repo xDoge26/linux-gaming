@@ -29,8 +29,7 @@ xrandr --output <output> --mode desktopxdesktopy --rate hz --scale-from scaleres
 
 # Skip grub
 sudo nano /etc/default/grub
-GRUB_HIDDEN_TIMEOUT=0
-GRUB_TIMEOUT=0
+GRUB_TIMEOUT=1
 sudo update-grub
 
 # Swapfile
