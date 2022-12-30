@@ -25,3 +25,7 @@ exit
 # Making the squashfs image
 mksquashfs . Ubuntu_20.04.sqsh -comp zstd
 
+# Extracting the squashfs
+unsquashfs -f -d Ubuntu/ Ubuntu_20.04.sqsh
+
+
