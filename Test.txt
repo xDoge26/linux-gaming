@@ -6,14 +6,14 @@ Gamemode : https://github.com/FeralInteractive/gamemode
 Linux information : https://github.com/dylanaraps/neofetch
 
 # Debloat mint
-sudo apt remove libreoffice* openjdk* thingy xfce4-dict celluloid hypnotix pix rhythmbox webapp-manager hexchat transmission-gtk thunderbird
+sudo apt remove libreoffice* openjdk* thingy xfce4-dict thunderbird celluloid hypnotix pix rhythmbox webapp-manager hexchat transmission-gtk warpinator
 sudo apt autoremove
 
 # Icon : 
 sudo apt install exe-thumbnailer
 
 # Font
-mkdir ~/.fonts      # then copy paste font you want
+mkdir ~/.fonts 
 
 # OpenGL Vulkan: 
 sudo apt install libgl1:i386 libgl1
