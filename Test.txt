@@ -112,3 +112,27 @@ cl_disablefreezecam 1
 -screen-width 960 -screen-height 540 -window-mode exclusive
 
 
+
+
+
+
+10.1 General
+10.1.1 How can I get a debugging log (a.k.a. terminal output)?
+Run your application from the command line (see Wine_User's_Guide#How_to_run_Windows_programs_from_the_command_line).
+
+You can then copy the log from the screen and paste it into a file if it's short; otherwise redirect the output of wine to a file using a Unix shell redirection, e.g.
+
+cd ~/.wine/drive_c/Games/Tron
+wine tron.exe &> log.txt 
+Important: Unless you have been asked specifically to provide a debug trace then do not do so. Simply follow the instructions above.
+
+Important: If you get a crash dialog while doing this, please click Close. Otherwise your log will be incomplete.
+
+Important: If the resulting text file doesn't have names of C source files in it, your copy of wine probably lacks debugging symbols. Please either build wine from source, or install the debug symbols package.
+
+10.1.2 How do I get a debug trace?
+Note: Please only use this procedure when instructed. In most cases a regular terminal output is enough (see above). When filing bugs, it is often necessary to get additional debug trace (generally +relay,+seh, but you might be asked for specific debug channels). To retrieve a trace, run:
+
+WINEDEBUG=+relay,+seh,+tid wine your_program.exe >> /tmp/output.txt 2>&1 
+Then attach /tmp/output.txt to the bug. If the resulting file is larger than 1 MB, compress it with bzip2 or rzip before attaching. There are some cases where the bug seems to disappear when WINEDEBUG is used with the right channel. Please mention that in the bug report. For a list of debug channels that are available in Wine, see Debug Channels
+
