@@ -74,20 +74,20 @@ resolution
 
 # Codec : 
 sudo apt install gstreamer1.0-libav:i386
-sudo apt install gstreamer1.0-plugins-bad:i386
 sudo apt install gstreamer1.0-plugins-base:i386
+sudo apt install gstreamer1.0-plugins-bad:i386
 sudo apt install gstreamer1.0-plugins-good:i386
 sudo apt install gstreamer1.0-plugins-ugly:i386
 
 sudo apt install gstreamer1.0-libav
-sudo apt install gstreamer1.0-plugins-bad
 sudo apt install gstreamer1.0-plugins-base
+sudo apt install gstreamer1.0-plugins-bad
 sudo apt install gstreamer1.0-plugins-good
 sudo apt install gstreamer1.0-plugins-ugly
 
-apt install gstreamer1.0-plugins-base:i386 gstreamer1.0-plugins-good:i386 gstreamer1.0-plugins-bad:i386 gstreamer1.0-plugins-ugly:i386 gstreamer1.0-libav:i386 gstreamer1.0-tools:i386 gstreamer1.0-x:i386 gstreamer1.0-alsa:i386 gstreamer1.0-gl:i386 gstreamer1.0-gtk3:i386 gstreamer1.0-qt5:i386 gstreamer1.0-pulseaudio:i386
+apt install gstreamer1.0-plugins-base:i386 gstreamer1.0-plugins-good:i386 gstreamer1.0-plugins-bad:i386 gstreamer1.0-plugins-ugly:i386 gstreamer1.0-libav:i386
 
-apt install gstreamer1.0-plugins-base:amd64 gstreamer1.0-plugins-good:amd64 gstreamer1.0-plugins-bad:amd64 gstreamer1.0-plugins-ugly:amd64 gstreamer1.0-libav:amd64 gstreamer1.0-tools:amd64 gstreamer1.0-x:amd64 gstreamer1.0-alsa:amd64 gstreamer1.0-gl:amd64 gstreamer1.0-gtk3:amd64 gstreamer1.0-qt5:amd64 gstreamer1.0-pulseaudio:amd64
+apt install gstreamer1.0-plugins-base:amd64 gstreamer1.0-plugins-good:amd64 gstreamer1.0-plugins-bad:amd64 gstreamer1.0-plugins-ugly:amd64 gstreamer1.0-libav:amd64
 
 
 
