@@ -98,6 +98,9 @@ rm ~/.local/share/keyrings/login.keyring
 nano ~/.config/redshift.conf
 
 [redshift]
+
+temp-day=6500
+temp-night=3500
 dawn-time=02:00
 dusk-time=06:00
 adjustment-method=randr
