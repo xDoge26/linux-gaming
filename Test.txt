@@ -49,7 +49,7 @@ dev.i915.perf_stream_paranoid=0
 # Swap
 vm.max_map_count = 81920
 vm.mmap_min_addr = 40960
-vm.min_free_kbytes = 10240
+vm.min_free_kbytes = 20480
 vm.oom_kill_allocating_task = 1
 vm.oom_dump_tasks = 0
 vm.user_reserve_kbytes = 0     
