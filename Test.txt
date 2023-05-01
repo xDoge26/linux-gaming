@@ -75,13 +75,11 @@ resolution
 
 # Codec : 
 sudo apt install gstreamer1.0-libav:i386
-sudo apt install gstreamer1.0-plugins-base:i386
 sudo apt install gstreamer1.0-plugins-good:i386
 sudo apt install gstreamer1.0-plugins-bad:i386
 sudo apt install gstreamer1.0-plugins-ugly:i386
 
 sudo apt install gstreamer1.0-libav
-sudo apt install gstreamer1.0-plugins-base
 sudo apt install gstreamer1.0-plugins-good
 sudo apt install gstreamer1.0-plugins-bad
 sudo apt install gstreamer1.0-plugins-ugly
