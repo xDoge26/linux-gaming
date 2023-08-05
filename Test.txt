@@ -19,9 +19,6 @@ mkdir ~/.fonts
 sudo apt install libgl1:i386 libgl1:amd64
 sudo apt install libvulkan1:i386 libvulkan1:amd64
 
-# Mesa :
-sudo add-apt-repository ppa:kisak/kisak-mesa && sudo dpkg --add-architecture i386 && sudo apt update && sudo apt upgrade && sudo apt install libgl1-mesa-dri:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386
-
 # Integer Scaling : 
 xrandr --mode 960x540
 xrandr --output DP-1 --scale 0.5x0.5 --filter nearest
