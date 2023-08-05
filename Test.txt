@@ -1,12 +1,11 @@
 Game trên Linux
 Wine : www.winehq.org 
-Lutris : https://lutris.net/
 Mangohud : https://github.com/flightlessmango/MangoHud
 Gamemode : https://github.com/FeralInteractive/gamemode
 Linux information : https://github.com/dylanaraps/neofetch
 
 # Debloat mint
-sudo apt remove libreoffice* openjdk* mythes* thingy xfce4-dict thunderbird celluloid hypnotix pix rhythmbox webapp-manager hexchat transmission-gtk warpinator papirus-icon-theme numix-icon-theme yaru-theme-icon breeze-icon-theme
+sudo apt remove libreoffice* openjdk* mythes* thingy xfce4-dict thunderbird* celluloid hypnotix pix rhythmbox webapp-manager hexchat transmission-gtk warpinator
 
 sudo apt autoremove
 
