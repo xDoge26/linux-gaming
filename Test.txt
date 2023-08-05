@@ -5,7 +5,7 @@ Gamemode : https://github.com/FeralInteractive/gamemode
 Linux information : https://github.com/dylanaraps/neofetch
 
 # Debloat mint
-sudo apt remove libreoffice* openjdk* thunderbird* mythes* thingy xfce4-dict celluloid hypnotix pix rhythmbox webapp-manager hexchat transmission-gtk warpinator
+sudo apt remove libreoffice* openjdk* thunderbird* papirus* yaru* thingy xfce4-dict celluloid hypnotix pix rhythmbox webapp-manager hexchat transmission-gtk warpinator
 
 sudo apt autoremove
 
